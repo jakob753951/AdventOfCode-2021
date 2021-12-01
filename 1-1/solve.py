@@ -1,4 +1,4 @@
-with open('1-1/data.txt') as data_file:
+with open('data.txt') as data_file:
 	points = [int(p) for p in data_file.read().split('\n')]
 
 pairs = list(zip(points, points[1:] + points[:1]))[:-1]

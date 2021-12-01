@@ -1,4 +1,4 @@
-with open('1-1/data.txt') as data_file:
+with open('data.txt') as data_file:
 	points = [int(p) for p in data_file.read().split('\n')]
 
 points_sums = [sum(points[i:i+3]) for i in range(len(points)-2)]
