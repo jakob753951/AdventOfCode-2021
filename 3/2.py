@@ -10,9 +10,11 @@ def get_counts(arr):
 
 for i in range(12):
 	if len(oxygen) != 1:
-		oxygen = [num for num in oxygen if int(num[i]) == int(get_counts(oxygen)[i]>=(len(oxygen)/2))]
+		oxy_count = get_counts(oxygen)
+		oxygen = [num for num in oxygen if int(num[i]) == int(oxy_count[i]>=(len(oxygen)/2))]
 	if len(co2) != 1:
-		co2 = [num for num in co2 if int(num[i]) == int(get_counts(co2)[i]<(len(co2)/2))]
+		co2_count = get_counts(co2)
+		co2 = [num for num in co2 if int(num[i]) == int(co2_count[i]<(len(co2)/2))]
 
 oxygen_generator_rating = int(oxygen[0], 2)
 CO2_scrubber_rating = int(co2[0], 2)
