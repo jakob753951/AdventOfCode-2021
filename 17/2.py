@@ -23,9 +23,6 @@ def check_velocity(x, y):
 def g(x):
 	return -1+sqrt(1+8*x)/2
 
-def f(x):
-	return int((x**2+x)/2)
-
 min_x = ceil(g(x0))
 max_x = x1
 min_y = y0
