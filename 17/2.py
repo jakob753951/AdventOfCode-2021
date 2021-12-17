@@ -29,7 +29,7 @@ def f(x):
 min_x = ceil(g(x0))
 max_x = x1
 min_y = y0
-max_y = f(abs(y0)-1)
+max_y = abs(y0)-1
 
 sum = 0
 for y in range(min_y, max_y+1):
